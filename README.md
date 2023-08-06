@@ -1,8 +1,8 @@
-#SpringBoot API and Docker Compose
-##Requirements
+# SpringBoot API and Docker Compose
+## Requirements
 * Docker
 * Docker Compose
-##How to Use
+## How to Use
 1. Initialize your Docker
 2. Configure the env files using the examples
 3. Open the terminal in the project's folder
