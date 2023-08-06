@@ -1,0 +1,23 @@
+services:
+ db:
+  image: mysql:8.0
+  restart: always
+  env_file:
+   - ./db.env
+  volumes:
+   - mysql-spring-data:/var/lib/mysql
+
+ api:
+  depends_on:
+   - db
+  restart: always
+  build: ./
+  ports:
+   - 8080:8080
+  env_file:
+   - ./api.env
+   
+volumes:
+ mysql-spring-data:
+
+
